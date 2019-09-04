@@ -1,0 +1,32 @@
+
+.left-menu {
+  background: #FFFFFF;
+  border-right: 1px solid #EEEEEE;
+  box-sizing: border-box;
+  padding-right: 24px;
+  width: 170px;
+  min-height: 100vh;
+  font-size: 14px;
+
+  ul {
+    li {
+      width: 100%;
+      line-height: 16px;
+      color: #0F1E36;
+      opacity: 0.5;
+      font-weight: bold;
+      list-style-type: none;
+      padding-bottom: 24px;
+    }
+  }
+
+  &-subsection {
+    h3 {
+      color: #0F1E36;
+      font-size: 14px;
+      font-weight: bold;
+      margin-bottom: 16px;
+      display: block;
+    }
+  }
+}

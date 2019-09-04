@@ -1,9 +1,63 @@
 import React, { Component } from 'react';
+import "./leftMenu.scss";
+import {BrowserRouter as Link} from "react-router-dom";
 
-class LeftMenu extends Component {
-    render() {
-        return();
-    }
+function LeftMenu () {
+        return(
+            <div className="left-menu">
+                <ul>
+                    <li>
+                        <Link to="/">Discover</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Songs</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Albums</Link>
+                    </li>
+                    <li>
+                        <Link to="/">Artists</Link>
+                    </li>
+                    <li>
+                        <Link to="/">YouTube</Link>
+                    </li>
+                </ul>
+                <div className="left-menu-subsection">
+                    <h3>My Tracks</h3>
+                    <ul>
+                        <li>
+                            <Link to="/">Favourite</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Recent History</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Download Items</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Local Files</Link>
+                        </li>
+                    </ul>
+                </div>
+                <div className="left-menu-subsection">
+                    <h3>Playlist</h3>
+                    <ul>
+                        <li>
+                            <Link to="/">Bangla</Link>
+                        </li>
+                        <li>
+                            <Link to="/">English</Link>
+                        </li>
+                        <li>
+                            <Link to="/">My Style</Link>
+                        </li>
+                        <li>
+                            <Link to="/">Hindi</Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        );
 }
 
 export default LeftMenu;
