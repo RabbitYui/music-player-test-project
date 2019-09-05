@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: "./src/index.js",
@@ -25,27 +26,15 @@ module.exports = {
                 }, {
                     loader: "sass-loader",
                 }]
-            },
-            {
-                test: /\.(png|jpe?g|gif)$/i,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'images',
-                },
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                loader: 'file-loader',
-                options: {
-                    outputPath: 'fonts',
-                },
             }
-
         ]
     },
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/index.html"
-        })
+        }),
+        new CopyWebpackPlugin([
+            {from: './assets', to: 'assets'}
+        ])
     ]
 };

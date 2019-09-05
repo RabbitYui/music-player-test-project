@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  width: 45%;
+  height: 65px;
+  background: #FFFFFF;
+  margin-left: 15%;
+  padding-left: 20px;
+
+  .search {
+    line-height: 65px;
+    img {
+      height: 20px;
+      width: auto;
+      padding-right: 10px;
+    }
+  }
+}
