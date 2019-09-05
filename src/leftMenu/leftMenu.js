@@ -5,6 +5,7 @@ import {BrowserRouter as Link} from "react-router-dom";
 function LeftMenu () {
         return(
             <div className="left-menu">
+                <img className="main-logo" src="./images/logo.png" alt=""/>
                 <ul>
                     <li>
                         <Link to="/">Discover</Link>
@@ -23,7 +24,7 @@ function LeftMenu () {
                     </li>
                 </ul>
                 <div className="left-menu-subsection">
-                    <h3>My Tracks</h3>
+                    <div>My Tracks</div>
                     <ul>
                         <li>
                             <Link to="/">Favourite</Link>
@@ -40,7 +41,7 @@ function LeftMenu () {
                     </ul>
                 </div>
                 <div className="left-menu-subsection">
-                    <h3>Playlist</h3>
+                    <div>Playlist</div>
                     <ul>
                         <li>
                             <Link to="/">Bangla</Link>
