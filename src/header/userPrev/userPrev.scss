@@ -1,0 +1,42 @@
+.profile {
+  height: 65px;
+  display: flex;
+  align-items: center;
+
+  &-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    margin: 0 14px 0 24px;
+    background-size: cover;
+  }
+
+  &:hover {
+    cursor: pointer;
+    background-color: #f0efef;
+  }
+
+  .name-info {
+    span {
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .premium {
+      color: #3E2AD1;
+
+      &-image {
+        width: 10px;
+        height: auto;
+        margin: 0 5px;
+      }
+      &-text {
+        font-size: 12px;
+        font-weight: 400;
+        letter-spacing: 0;
+      }
+    }
+  }
+}
+
