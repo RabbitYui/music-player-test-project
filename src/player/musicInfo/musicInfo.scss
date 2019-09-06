@@ -1,0 +1,42 @@
+
+.music-info {
+  width: 167px;
+  background-color: #F51E38;
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    background-size: cover;
+    margin-left: 24px;
+    margin-right: 8px;
+  }
+
+  &-playlist {
+    width: 10px;
+    height: auto;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+  }
+
+  &-text {
+    font-family: "Source Sans Pro Regular";
+    display: flex;
+    flex-direction: column;
+    &-song {
+      color: #fff;
+      font-size: 12px;
+      line-height: 16px;
+      font-weight: 600;
+    }
+
+    &-artist {
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 10px;
+    }
+  }
+}

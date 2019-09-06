@@ -15,6 +15,9 @@
       height: 20px;
       width: auto;
       padding-right: 10px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     input[type=search] {
       border: none;

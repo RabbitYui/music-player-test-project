@@ -30,6 +30,9 @@ $activeColour:  #3E2AD1;
         border: none;
         color: $activeColour;
       }
+      &:active {
+        color: $activeColour;
+      }
     }
   }
 
