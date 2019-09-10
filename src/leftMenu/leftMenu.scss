@@ -29,9 +29,15 @@ $activeColour:  #3E2AD1;
       &:focus {
         border: none;
         color: $activeColour;
+        .left-menu-icon {
+          fill: $activeColour;
+        }
       }
       &:active {
         color: $activeColour;
+        .left-menu-icon {
+          fill: $activeColour;
+        }
       }
     }
   }
@@ -62,8 +68,9 @@ $activeColour:  #3E2AD1;
   line-height: 16px;
   height: 16px;
   margin-right: 15px;
+  fill: #0F1E36;
   &:focus {
-    color: $activeColour;
+    fill: $activeColour;
   }
 }
 
