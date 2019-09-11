@@ -22,7 +22,12 @@ $activeColour:  #3E2AD1;
       list-style-type: none;
       padding-left: 24px;
       display: block;
-
+      .left-menu-icon {
+        line-height: 16px;
+        height: 16px;
+        margin-right: 15px;
+        fill: #0F1E36;
+      }
       &:hover {
         cursor: pointer;
         background-color: #f0efef;
@@ -53,9 +58,19 @@ $activeColour:  #3E2AD1;
       font-weight: bold;
       margin-bottom: 16px;
       margin-top: 20px;
-      svg {
+      .left-menu-icon {
         fill: #0F1E36;
         opacity: 0.5;
+      }
+    }
+  }
+
+  .active {
+    outline: none;
+    .navigation-link {
+      color: $activeColour;
+      .left-menu-icon {
+        fill: $activeColour;
       }
     }
   }
@@ -67,22 +82,13 @@ $activeColour:  #3E2AD1;
   }
 }
 
-.left-menu-icon {
-  line-height: 16px;
-  height: 16px;
-  margin-right: 15px;
-  fill: #0F1E36;
-  &:focus {
-    fill: $activeColour;
-  }
-}
 
-.active {
-  color: $activeColour;
-  .left-menu-icon {
-    fill: $activeColour;
-  }
-}
+
+
 .playlist-plus {
 
+}
+
+a {
+  text-decoration: none;
 }

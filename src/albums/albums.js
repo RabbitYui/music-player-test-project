@@ -1,5 +1,5 @@
 import React, {Component} from "react";
-import {Button} from "antd";
+// import {Button} from "antd";
 import "./albums.scss";
 // import "antd/dist/antd.css";
 
@@ -9,9 +9,8 @@ class Albums extends Component {
         return (
             <div style={{width: "100%",
             height: "60px",
-            backgroundColor: "#41ffb5"}}>
-                It Works Too!
-                 <Button type="primary" shape="round"> I`m a button</Button>
+            backgroundColor: "#41ffb5",
+            color: "#000"}} >
             </div>
         );
     }
