@@ -11,9 +11,9 @@ $activeColour:  #3E2AD1;
   letter-spacing: 1px;
   position: fixed;
 
-  ul {
+  .navigation-block {
     padding-left: 0;
-    li {
+    .navigation-link {
       width: 100%;
       line-height: 40px;
       color: #0F1E36;
@@ -21,6 +21,7 @@ $activeColour:  #3E2AD1;
       font-weight: bold;
       list-style-type: none;
       padding-left: 24px;
+      display: block;
 
       &:hover {
         cursor: pointer;
@@ -33,27 +34,29 @@ $activeColour:  #3E2AD1;
           fill: $activeColour;
         }
       }
-      &:active {
-        color: $activeColour;
-        .left-menu-icon {
-          fill: $activeColour;
-        }
-      }
     }
-  }
 
-  &-subsection {
-    div {
+    .title {
       color: #0F1E36;
       font-size: 14px;
       font-weight: bold;
       margin-bottom: 16px;
       display: block;
       padding-left: 24px;
+      margin-top: 20px;
     }
     .playlist {
+      font-size: 14px;
+      padding-left: 24px;
       display: flex;
       justify-content: space-between;
+      font-weight: bold;
+      margin-bottom: 16px;
+      margin-top: 20px;
+      svg {
+        fill: #0F1E36;
+        opacity: 0.5;
+      }
     }
   }
 
@@ -74,6 +77,12 @@ $activeColour:  #3E2AD1;
   }
 }
 
+.active {
+  color: $activeColour;
+  .left-menu-icon {
+    fill: $activeColour;
+  }
+}
 .playlist-plus {
 
 }

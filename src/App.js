@@ -11,12 +11,12 @@ function App() {
   return (
     <Router>
       <div className="main-app">
-        <LeftMenu/>
         <Header/>
-          <Switch>
+        <LeftMenu/>
+          {/*<Switch>*/}
               <Route exact path="/" component={MainPage} />
               <Route path="/albums" component={Albums} />
-          </Switch>
+          {/*</Switch>*/}
           <Player />
       </div>
     </Router>
