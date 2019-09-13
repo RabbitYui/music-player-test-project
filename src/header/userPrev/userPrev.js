@@ -41,6 +41,7 @@ class UserPrev extends Component{
     updateAvatar = (url) => {
       this.setState({
           url: url,
+          show: !this.state.show
       });
     };
 
