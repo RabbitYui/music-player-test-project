@@ -4,11 +4,13 @@ import "./mainPage.scss";
 function MainPage() {
     return(
         <div style={{width: "100%",
-        height: "50px",
+        height: "200px",
         backgroundColor: "#fff4b6",
         color: "#000",
         textAlign: "center"}}>
-            It works!
+           <span>
+               This is main page!
+           </span>
         </div>
     );
 }

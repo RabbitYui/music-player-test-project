@@ -8,9 +8,13 @@ class Albums extends Component {
     render() {
         return (
             <div style={{width: "100%",
-            height: "60px",
+            height: "200px",
             backgroundColor: "#41ffb5",
-            color: "#000"}} >
+            color: "#000",
+            textAlign: "center"}} >
+                <span>
+                    This is albums component!
+                </span>
             </div>
         );
     }

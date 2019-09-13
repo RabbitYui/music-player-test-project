@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, ReactPropTypes } from 'react';
 import "./userPrev.scss";
 import ChangeAvatarModal from "../../modals/changeAvatarModal/changeAvatarModal";
 
-let imageUrl;
+let imageUrl = "./assets/images/img/photo_2019-08-19_17-02-07.jpg";
 class UserPrev extends Component{
 
     constructor(props) {
@@ -10,7 +10,8 @@ class UserPrev extends Component{
         this.state = {
             userName: "Yui",
             isPremium: true,
-            showModal: false
+            show: false,
+            url: imageUrl
         }
     }
 
@@ -27,26 +28,42 @@ class UserPrev extends Component{
 
     showModal = e => {
         this.setState({
-            showModal: true
+            show: true
         });
     };
 
+    closeModal = e => {
+      this.setState({
+          show: !this.state.show
+      });
+    };
+
+    updateAvatar = (url) => {
+      this.setState({
+          url: url,
+      });
+    };
+
     render() {
-        imageUrl =  "./assets/images/img/photo_2019-08-19_17-02-07.jpg";
         return (
-            <div className="profile"
-                 onClick={e => {
-                this.showModal();
-            }}>
-                <div className="profile-avatar" style={ {backgroundImage: `url(${imageUrl})`}}>
-                </div>
-                <div className="name-info">
-                    <span>{this.state.userName}</span>
-                    {this.checkPremium()}
+            <div>
+                <div className="profile"
+                     onClick={e => {
+                         this.showModal();
+                     }}>
+                    <div className="profile-avatar" style={ {backgroundImage: `url(${this.state.url})`}}>
+                    </div>
+                    <div className="name-info">
+                        <span>{this.state.userName}</span>
+                        {this.checkPremium()}
+                    </div>
                 </div>
                 <ChangeAvatarModal
-                show = {this.state.showModal}/>
+                    show = {this.state.show}
+                    onClose = {this.closeModal}
+                    updateAvatar={this.updateAvatar}/>
             </div>
+
         );
     }
 }
